@@ -3,6 +3,12 @@ import App from './App';
 
 test('renders learn react link', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
+  const linkElement = screen.getByText(/hello world/i);
   expect(linkElement).toBeInTheDocument();
+});
+
+it('tests that there is a specific heading', () => {
+  render(<App />);
+  const headElement = screen.getByText(/Sherry/);
+  expect(headElement).toBeInTheDocument();
 });
