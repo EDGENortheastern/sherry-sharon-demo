@@ -1,12 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello World!</h1>
-      <h2>This is a seminar demonstration for Sherry and Sharon</h2>
-      <input type="text" name="" id="input-box1" />
+      <h1>Hello Name App</h1>
+      <label htmlFor="name">Name</label>
+      <input type="text" id="name" />
     </div>
   );
 }
